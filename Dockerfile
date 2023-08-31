@@ -28,3 +28,15 @@ RUN git clone https://github.com/an-tao/drogon $DROGON_ROOT
 WORKDIR $DROGON_ROOT
 
 RUN ./build.sh
+# These commands copy your files into the specified directory in the image
+# and set that as the working location
+COPY . /usr/src/myapp
+WORKDIR /usr/src/myapp/build
+
+# This command compiles your app using GCC, adjust for your source code
+RUN cmake .. && make -o myapp
+
+# This command runs your application, comment out this line to compile only
+CMD ["./myapp"]
+
+LABEL Name=cppprac Version=0.0.1
