@@ -25,7 +25,7 @@ ENV DROGON_ROOT="$IROOT/drogon"
 ADD https://api.github.com/repos/an-tao/drogon/git/refs/heads/master $IROOT/version.json
 RUN git clone https://github.com/an-tao/drogon $DROGON_ROOT
 
-WORKDIR $DROGON_ROOT
+#WORKDIR $DROGON_ROOT
 
 RUN ./build.sh
 # These commands copy your files into the specified directory in the image
