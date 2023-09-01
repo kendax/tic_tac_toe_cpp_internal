@@ -270,6 +270,7 @@ int main()
     app()
         // All sessions are stored for 24 Hours
         .enableSession(24h)
-        .addListener("127.0.0.1", 8848)
+        .addListener("0.0.0.0", 8080)
         .run();
+        return 0;
 }

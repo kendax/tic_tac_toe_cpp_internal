@@ -1,13 +1,13 @@
 FROM drogonframework/drogon:latest
 
-COPY . /usr/src/app
+COPY . /usr/src/drogo
 
-WORKDIR /usr/src/app/build
+WORKDIR /usr/src/drogo/build
 
 RUN cmake ..
 RUN make
 
-ENV PORT "8848"
-EXPOSE 8848
+ENV PORT "8080"
+EXPOSE 8080
 
-CMD ["./app"]
+CMD ["./drogo"]
