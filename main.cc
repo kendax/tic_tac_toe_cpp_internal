@@ -272,5 +272,4 @@ int main()
         .enableSession(24h)
         .addListener("0.0.0.0", 8080)
         .run();
-        return;
 }
