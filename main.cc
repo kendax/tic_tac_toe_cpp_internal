@@ -264,7 +264,7 @@ int main()
         },
         {Get}); //Using GET method for this function
 
-    LOG_INFO << "Server running on 127.0.0.1:8848"; //Display in the terminal the program's address and port while running
+    LOG_INFO << "Server running on 0.0.0.0:8080"; //Display in the terminal the program's address and port while running
 
     //Set HTTP listener address and port and run the HTTP framework
     app()
