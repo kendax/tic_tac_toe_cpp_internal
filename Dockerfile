@@ -10,4 +10,4 @@ RUN make
 ENV PORT "8080"
 EXPOSE 8080
 
-CMD ["./drogo"]
+CMD ["./tic_tac_toe_cpp_internal"]
